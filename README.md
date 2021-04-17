@@ -9,3 +9,11 @@
 2. In terminal open a new file: sudo nano ~/.emacs
 3. Paste .emacs to that file
 4. Run Emacs
+
+Or autmated:
+```bash
+git clone git@github.com:lennertfranssens/emacs_config.git
+config=$(cat emacs_config/REMOVE_BEFORE_DOT.emacs)
+echo "${config}" > ~/.emacs
+sudo rm -rf emacs_config
+```
